@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conversor.css">
+    <title>Math Today</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-plus"></i>
+        <h1>Math Today</h1>
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-divide"></i>
+        <i class="fas fa-minus"></i>
+    </header>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="conversor.html">Conversor</a></p>
+        <p><a href="calculadora.html">Calculadora</a></p>
+        <p><button id="plus"><i class="fas fa-search-plus"></i></button></p>
+        <p><button id="minus"><i class="fas fa-search-minus"></i></button></p>
+    </nav>
+    <section id="home">
+        <h2>Conversor Math Today!</h2>
+        <label id="darkmode"></label>
+    </section>
+    <form>
+        <fieldset>
+            <legend>Real para:</legend>
+            <div>
+                <div>
+                    <label for="moeda">R$</label>
+                    <input id="valor" type="text">
+                    <select id="moeda2">
+                        <option value="" disabled selected>Selecione a moeda:</option>
+                        <option class="moeda" value="0.20">Dólar</option>
+                        <option class="moeda" value="0.17">Euro</option>
+                    </select>
+                </div>
+                <button type="button" id="botao" onclick="mostraResultado()" >Converter</button>
+            </div>
+            <br>
+            <label for="real">Resultado:</label>
+            <br>
+            <p id="resultado"><span id="resultado"></span></p>
+        </fieldset>
+        <fieldset>
+            <legend>Ceulsius para:</legend>
+            <div>
+                <div>
+                    <label for="temp">°C</label>
+                    <input type="text" id="temp">
+                    <select id="temp2">
+                    <option disabled selected value="">Selecione a medida:</option>
+                    <option value="32">°F</option>
+                    <option value="273"> K</option>
+                </select>
+                </div>
+                
+                <button type="button" id="botao2" onclick="mostraTemperatura()">Converter</button>
+            </div>
+            <br>
+            <label for="ceulsius">Resultado:</label>
+            <br>
+            <p><span id="resultado2"></span></p>
+        </fieldset>
+    </form>
+    <footer>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-plus"></i>
+        <p>Math Today &copy;Copyright</p>
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-divide"></i>
+        <i class="fas fa-minus"></i>
+    </footer>
+    <script src="https://kit.fontawesome.com/9540cccc84.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/conversor.js"></script>
+</body>
+</html>

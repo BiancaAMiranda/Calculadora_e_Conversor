@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body.noite{
+    background-color: black;
+    color: white;
+}
+/* Header */
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: lightpink;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header.noite{
+    background-color: crimson;
+    color: white;
+}
+/* Menu */
+nav{
+    margin-top: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: lightpink;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav p{
+    width: 20%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-shadow: 1px 1px 1px gray;
+}
+nav button{
+    background-color: inherit;
+    border: none;
+}
+nav button i{
+    font-size: 20px;
+}
+nav button:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px gray;
+}
+/* Home */
+#home{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 3vw 3vh 3vw;
+}
+/* DarkMode */
+label{
+    margin-top: 15vh;
+    position: absolute;
+    background-image: linear-gradient(to right, white, black);
+    height: 25px;
+    width: 60px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+label.noite{
+    border: 3px solid white;
+}
+label:before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 25px;
+    width: 30px;
+    border-radius: 30px;
+    left: -2px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+label.dia:before {
+    left: 30px;
+    background-color: #fff;
+}
+nav.noite{
+    background-color: crimson;
+    color: white;
+}
+nav a.noite{
+    text-decoration: none;
+    color: white;
+}
+nav a.noite:hover{
+    text-shadow: 1px 1px 1px black;
+}
+nav button.noite{
+    background-color: inherit;
+    color: white;
+    border: none;
+}
+#home p{
+    margin-top: 2vh;
+    font-size: 0.8em;
+}
+/* Conversor */
+#conversor img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#conversor{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text1{
+    margin-left: 5vw;
+}
+/* Calculadora */
+#calculadora img{
+    margin-left: 7vw;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#calculadora{
+    height: 30vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+/*footer*/
+footer{
+    background-color: lightpink;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer.noite{
+    background-color: crimson;
+}
+@media screen and (max-width: 550px) {
+    /* Conversor */
+    #conversor img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    #conversor{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #text1{
+        margin-left: 5vw;
+    }
+    /* Calculadora */
+    #calculadora img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    #calculadora{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Nav*/
+    nav p{
+        width: auto;
+    }
+}

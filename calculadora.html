@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <title>Math Today</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-plus"></i>
+        <h1>Math Today</h1>
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-divide"></i>
+        <i class="fas fa-minus"></i>
+    </header>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="conversor.html">Conversor</a></p>
+        <p><a href="calculadora.html">Calculadora</a></p>
+        <p><button id="plus"><i class="fas fa-search-plus"></i></button></p>
+        <p><button id="minus"><i class="fas fa-search-minus"></i></button></p>
+    </nav>
+    <section id="home">
+        <h2>Calculadora Math Today!</h2>
+        <label id="darkmode"></label>
+    </section>
+    <form class="calculator" name="calculator">
+        <div id="visor"><input id="visorInput" name="visor" type="text"></div>
+        <div><input onclick="limpar()" type="button" value="AC"></div>
+        <div><input onclick="excluir()" type="button" value="E"></div>
+        <div><input onclick="percent()" type="button" value="%"></div>
+        <div><input onclick="insert('/')" type="button" value="/"></div>
+        <div><input onclick="insert(7)" type="button" value="7"></div>
+        <div><input onclick="insert(8)" type="button" value="8"></div>
+        <div><input onclick="insert(9)" type="button" value="9"></div>
+        <div><input onclick="insert('*')" type="button" value="x"></div>
+        <div><input onclick="insert(4)" type="button" value="4"></div>
+        <div><input onclick="insert(5)" type="button" value="5"></div>
+        <div><input onclick="insert(6)" type="button" value="6"></div>
+        <div><input onclick="insert('-')" type="button" value="-"></div>
+        <div><input onclick="insert(1)" type="button" value="1"></div>
+        <div><input onclick="insert(2)" type="button" value="2"></div>
+        <div><input onclick="insert(3)" type="button" value="3"></div>
+        <div><input onclick="insert('+')" type="button" value="+"></div>
+        <div><input onclick="insert('**')" type="button" value="**"></div>
+        <div><input onclick="insert(0)" type="button" value="0"></div>
+        <div><input onclick="insert('.')" type="button" value="."></div>
+        <div><input onclick="conta()" type="button" value="="></div>
+    </form>
+    <footer>
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-plus"></i>
+        <p>Math Today &copy;Copyright</p>
+        <i class="fas fa-minus"></i>
+        <i class="fas fa-divide"></i>
+        <i class="fas fa-minus"></i>
+    </footer>
+    <script src="https://kit.fontawesome.com/9540cccc84.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
